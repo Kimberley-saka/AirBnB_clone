@@ -19,7 +19,7 @@ class BaseModel:
     created_at = Column(DateTime, nullable=False, default=datetime.utcnow())
     updated_at = Column(DateTime, nullable=False, default=datetime.utcnow())
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, **kwargs):
         """Instantiation of base model class
 
         Args:
